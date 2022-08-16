@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+
 import '../constants.dart';
 
 class BottomButton extends StatelessWidget {
-  BottomButton({@required this.title, @required this.onPress});
+  BottomButton({required this.title, required this.onPress});
 
   final Function onPress;
   final Text title;
@@ -10,7 +11,7 @@ class BottomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onPress,
+      onTap: onPress(),
       child: Container(
         child: Center(child: title),
         width: double.infinity,

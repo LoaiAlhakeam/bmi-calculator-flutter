@@ -1,13 +1,13 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import '../Components/reusable_card.dart';
-import '../Components/card_child.dart';
-import '../constants.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'result_page.dart';
-import '../Components/round_icon_button.dart';
-import '../Components/bottom_button.dart';
 import 'package:bmi_calculator/calculator_brain.dart';
+import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+import '../Components/bottom_button.dart';
+import '../Components/card_child.dart';
+import '../Components/reusable_card.dart';
+import '../Components/round_icon_button.dart';
+import '../constants.dart';
+import 'result_page.dart';
 
 class InputPage extends StatefulWidget {
   @override
@@ -20,7 +20,7 @@ enum Gender {
 }
 
 class _InputPageState extends State<InputPage> {
-  Gender selectedGender;
+  late Gender selectedGender;
   int weight = 77;
   int age = 22;
   int height = 150;
@@ -124,6 +124,7 @@ class _InputPageState extends State<InputPage> {
                       ],
                     ),
                     color: kActiveCardColor,
+                    onTap: () {},
                   ),
                 )
               ],
@@ -169,6 +170,7 @@ class _InputPageState extends State<InputPage> {
                       ],
                     ),
                     color: kActiveCardColor,
+                    onTap: () {},
                   ),
                 ),
                 Expanded(
@@ -208,6 +210,7 @@ class _InputPageState extends State<InputPage> {
                       ],
                     ),
                     color: kActiveCardColor,
+                    onTap: () {},
                   ),
                 ),
               ],

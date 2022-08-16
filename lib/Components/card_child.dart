@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+
 import '../constants.dart';
 
 class ReusableCardChild extends StatelessWidget {
-  ReusableCardChild({@required this.icon, this.label});
+  ReusableCardChild({required this.icon, required this.label});
 
   final IconData icon;
   final String label;

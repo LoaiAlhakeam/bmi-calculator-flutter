@@ -1,13 +1,14 @@
-import 'package:bmi_calculator/constants.dart';
 import 'package:bmi_calculator/Components/reusable_card.dart';
+import 'package:bmi_calculator/constants.dart';
 import 'package:flutter/material.dart';
+
 import '../Components/bottom_button.dart';
 
 class ResultPage extends StatelessWidget {
   ResultPage({
-    @required this.bmi,
-    @required this.bmiMoreResult,
-    @required this.bmiResult,
+    required this.bmi,
+    required this.bmiMoreResult,
+    required this.bmiResult,
   });
 
   final String bmiResult;
@@ -51,6 +52,7 @@ class ResultPage extends StatelessWidget {
                     ),
                   ],
                 ),
+                onTap: () {},
               ),
             ),
             Expanded(
