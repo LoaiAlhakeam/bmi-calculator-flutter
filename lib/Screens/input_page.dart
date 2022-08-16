@@ -20,7 +20,7 @@ enum Gender {
 }
 
 class _InputPageState extends State<InputPage> {
-  late Gender selectedGender;
+  Gender? selectedGender;
   int weight = 77;
   int age = 22;
   int height = 150;
